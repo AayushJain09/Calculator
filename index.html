@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyCalculator</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    
+    <!-- AC C % / -->
+    <!-- 7 8 9 * -->
+    <!-- 4 5 6 - -->
+    <!-- 1 2 3 + -->
+    <!-- () 0 . = -->
+    <div class="calculator">
+        <h1>MyCalculator</h1>
+        <input id="display" />
+        <div class="allbuttons">
+            <div class="mycol">
+                <div class="row">
+                    <button class="btn1 btn" onclick= "addToDisplay('AC') " >AC</button>
+                    <button class="btn1 btn" onclick= "addToDisplay('Back') " >&lt;</button>
+                    <button class="btn1 btn" onclick= "addToDisplay('%') " >%</button>
+                </div>
+                <div class="row">
+                    <button class="btn2 btn" onclick= "addToDisplay('7') " >7</button>
+                    <button class="btn2 btn" onclick= "addToDisplay('8') " >8</button>
+                    <button class="btn2 btn" onclick= "addToDisplay('9') " >9</button>
+                </div>
+                <div class="row">
+                    <button class="btn2 btn" onclick= "addToDisplay('4') " >4</button>
+                    <button class="btn2 btn" onclick= "addToDisplay('5') " >5</button>
+                    <button class="btn2 btn" onclick= "addToDisplay('6') " >6</button>
+                </div>
+                <div class="row">
+                    <button class="btn2 btn" onclick= "addToDisplay('1') " >1</button>
+                    <button class="btn2 btn" onclick= "addToDisplay('2') " >2</button>
+                    <button class="btn2 btn" onclick= "addToDisplay('3') " >3</button>
+                </div>
+                <div class="row">
+                    <button class="btn2 btn" onclick= "addToDisplay('()') " >( )</button>
+                    <button class="btn2 btn" onclick= "addToDisplay('0') " >0</button>
+                    <button class="btn2 btn" onclick= "addToDisplay('.') " >.</button>
+                </div>
+            </div>
+            <div class="mycol">
+                <button class="btn1 btn" onclick= "addToDisplay('/') " >/</button>
+                <button class="btn1 btn" onclick= "addToDisplay('*') " >*</button>
+                <button class="btn1 btn" onclick= "addToDisplay('-') " >-</button>
+                <button class="btn1 btn" onclick= "addToDisplay('+') " >+</button>
+                <button class="btn1 btn" onclick= "addToDisplay('=') " >=</button>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+<script src="./script.js"></script>    
+
+</html>
